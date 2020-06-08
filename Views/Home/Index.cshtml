@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Suggest a movie!</legend>
+        <form method="post" action="/process">
+            <div>
+                <label>Title:</label>
+                <input type="text" name="Title" />
+            </div>
+            <div>
+                <label>Year:</label>
+                <input type="number" name="Year" />
+            </div>
+            <div>
+                <label>Genre:</label>
+                <select name="Genre">
+                    <option>Comedy</option>
+                    <option>Documentary</option>
+                    <option>Science Fiction</option>
+                    <option>Action</option>
+                    <option>Drama</option>
+                </select>
+            </div>
+            <div>
+                <label>Description:</label>
+                <textarea name="Description"></textarea>
+            </div>
+            <input type="submit" value="Suggest a movie" />
+        </form>
+    </fieldset>
+</body>
+</html>

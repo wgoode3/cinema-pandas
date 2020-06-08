@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Thanks for suggesting a movie!</h1>
+    <p>@DateTime.Now.ToString("ddd, d MMMM, yyy")</p>
+    <p>@DateTime.Now.ToString("h:mm tt")</p>
+    <ul>
+        <li>Title: @ViewBag.Title</li>
+        <li>Year: @ViewBag.Year</li>
+        <li>Genre: @ViewBag.Genre</li>
+        <li>Description: @ViewBag.Description</li>
+    </ul>
+    <a href="/">Suggest another movie</a>
+</body>
+</html>
